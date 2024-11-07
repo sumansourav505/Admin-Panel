@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-pannel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Admin panel</h2>
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" placeholder="Enter product name" required>
+        <br><br>
+        <label for="sellingPrice">Selling Price:</label>
+        <input type="number" id="sellingPrice" placeholder="Enter price" required>
+        <br><br>
+        <label for="category">Choose Category:</label>
+        <select id="category">
+        <option value="electronics">Electronics Items</option>
+        <option value="food">Food Items</option>
+        <option value="skincare">Skin Care Items</option>
+        </select>
+        <button onclick="addProduct()">Add Product</button>
+        <h3>Products by Category</h3>
+        <div class="productDisplay">
+            <h3>Electronics Items:</h3>
+            <ul class="electronic"></ul>
+            <h3>Food Items:</h3>
+            <ul class="food"></ul>
+            <h3>Skin Care Items:</h3>
+            <ul class="skincare"></ul>
+        </div>
+
+        <br><br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
